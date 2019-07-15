@@ -1,0 +1,27 @@
+.TodoList {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: black;
+    display: flex
+}
+
+.TodoList>p {
+    margin: 0;
+    padding: 10px 5px;
+    border-bottom: 1px solid #EEE;
+    border-bottom-color: rgb(29, 29, 103);
+}
+
+.TodoList:last-child {
+    border-bottom: none;
+}
+
+.TodoList-done>p {
+    opacity: 0.3;
+    text-decoration: line-through;
+}
+
+.TodoList>img {
+    width: 24px;
+}
