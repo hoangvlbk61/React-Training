@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="root"> </div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        const Title =
+        <div>
+            <p> Test this app - To DO List </p>
+            <img src="http://lorempixel.com/400/200/" alt="Hello" />
+        </div>; const Img = React.createElement('img', { src: 'http://lorempixel.com/400/200/' }, ); const App = React.createElement('div', null, Title, Img); const root = document.getElementById('root'); ReactDOM.render(App, root);
+    </script>
+
+</body>
+
+</html>
