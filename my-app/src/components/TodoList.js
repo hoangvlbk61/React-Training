@@ -1,4 +1,6 @@
 import React, { Component }  from 'react';
+import PropTypes from 'prop-types';
+
 import './TodoList.css';
 import checkImg from '../img/check.svg'; 
 import unCheckImg from '../img/uncheck.svg';
@@ -21,6 +23,16 @@ class TodoList extends Component {
             </div>
         ); 
     }
+}
+
+// PROP TYPES DECLARATIONG
+
+TodoList.propTypes = { 
+    item: PropTypes.shape({
+        title: PropTypes.string.isRequired, 
+        isCompleted: PropTypes.bool.isRequired,
+    }), 
+    onclick: PropTypes.func.isRequired,
 }
 
 export default TodoList ; 

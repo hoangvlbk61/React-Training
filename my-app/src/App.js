@@ -10,18 +10,19 @@ class App extends Component{
       titles: [
         { 'title':'Bài này chill phết', isCompleted: true }, 
         { 'title':'Lầu 20' , isCompleted: false},
-        { 'title':'Đi Đi Đi' , isCompleted: true },
+        { 'title':'Đi Đi Đi' , isCompleted: false },
       ]
     };
     this.onItemClicked = this.onItemClicked.bind(this) ; 
     this.onKeyUp = this.onKeyUp.bind(this) ; 
     this.onCheckAllClicked = this.onCheckAllClicked.bind(this) ; 
+    console.log(this.state);
   }
 
   onCheckAllClicked() { 
     let { titles }= this.state ;
     let { titles: newTitles} = this.state ; 
-    let uncheckedIndexItem = newTitles.filter( (element) => element.isCompleted==false ).length;
+    let uncheckedIndexItem = newTitles.filter( (element) => element.isCompleted===false ).length;
     console.log(uncheckedIndexItem) ; 
     if(uncheckedIndexItem > 0) 
     {
