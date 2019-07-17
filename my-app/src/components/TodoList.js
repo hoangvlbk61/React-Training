@@ -7,8 +7,10 @@ import unCheckImg from '../img/uncheck.svg';
 
 class TodoList extends Component {
     
+    
     render()
     {
+        
         const { item, onclick } = this.props ; 
         let url = unCheckImg ; 
         if(item.isCompleted) 

@@ -31,8 +31,10 @@ class App extends Component {
   }
 
   render() { 
+    console.log(React.version);
     return (
       <div className="App">
+      
         <button onClick={()=> this.removeCounter()}> Remove Counter</button>
       {this.state.showCounter && <Counter/> }
       </div>
